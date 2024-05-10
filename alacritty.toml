@@ -1,0 +1,15 @@
+import = [
+    "C:\\Users\\PaoloMissagia\\AppData\\Roaming\\Alacritty\\themes.toml",
+    "C:\\Users\\PaoloMissagia\\AppData\\Roaming\\Alacritty\\fonts.toml"
+]
+
+[shell]
+    program = "wsl ~"
+
+[window]
+    decorations = "none"
+    opacity = 1.0
+    padding = { x = 5, y = 5 }
+
+[env]
+    TERM = "xterm-256color"
