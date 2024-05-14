@@ -33,7 +33,7 @@ return {
 		}
 
 		dashboard.opts.layout = {
-			{ type = "padding", val = 10 },
+			{ type = "padding", val = 8 },
 			dashboard.section.header,
 			{ type = "padding", val = 5 },
 			dashboard.section.buttons,
