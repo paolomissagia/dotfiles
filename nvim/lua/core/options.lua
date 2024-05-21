@@ -32,6 +32,3 @@ vim.opt.scrolloff = 8
 -- window manager
 vim.opt.splitbelow = true
 vim.opt.splitright = true
-
--- make command bar single line
-vim.o.cmdheight = 0
