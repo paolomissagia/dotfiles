@@ -10,7 +10,6 @@ return {
 				ruby = { "rubocop" },
 				javascript = { "prettierd" },
 				typescript = { "prettierd" },
-				astro = { "prettierd" },
 				html = { "prettierd" },
 				css = { "prettierd" },
 			},
