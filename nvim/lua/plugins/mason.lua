@@ -13,8 +13,8 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"pylsp",
-				"tsserver",
 				"solargraph",
+				"tsserver",
 				"html",
 				"cssls",
 				"angularls",
@@ -27,10 +27,10 @@ return {
 				"stylua",
 				"isort",
 				"black",
+				"pylint",
 				"rubocop",
 				"prettierd",
 				"eslint_d",
-				"pylint",
 			},
 		})
 	end,

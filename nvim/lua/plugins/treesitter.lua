@@ -13,7 +13,6 @@ return {
 				"javascript",
 				"html",
 				"css",
-				"svelte",
 			},
 			sync_install = false,
 			highlight = { enable = true },
