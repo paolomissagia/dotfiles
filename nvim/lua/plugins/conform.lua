@@ -12,6 +12,7 @@ return {
 				typescript = { "prettierd" },
 				html = { "prettierd" },
 				css = { "prettierd" },
+				astro = { "prettierd" },
 			},
 
 			format_on_save = {

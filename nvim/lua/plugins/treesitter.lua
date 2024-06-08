@@ -13,6 +13,7 @@ return {
 				"javascript",
 				"html",
 				"css",
+				"astro",
 			},
 			sync_install = false,
 			highlight = { enable = true },
