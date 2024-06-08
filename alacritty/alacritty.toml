@@ -1,8 +1,9 @@
 [env]
 TERM = "xterm-256color"
 
-[shell]
-program = "wsl ~"
+# enable when using windows
+# [shell]
+# program = "wsl ~"
 
 [window]
 decorations = "none"
