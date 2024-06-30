@@ -13,7 +13,7 @@ return {
 				"javascript",
 				"html",
 				"css",
-				"astro",
+				"tsx",
 			},
 			sync_install = false,
 			highlight = { enable = true },

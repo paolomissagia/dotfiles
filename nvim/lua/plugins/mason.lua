@@ -18,7 +18,6 @@ return {
 				"html",
 				"cssls",
 				"angularls",
-				"astro",
 			},
 		})
 
