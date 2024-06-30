@@ -35,3 +35,6 @@ vim.opt.splitright = true
 
 -- word wrap
 vim.o.wrap = false
+
+-- turn off mouse/trackpad
+vim.opt.mouse = ""
