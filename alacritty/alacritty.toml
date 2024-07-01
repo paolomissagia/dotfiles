@@ -1,9 +1,12 @@
 [env]
 TERM = "xterm-256color"
 
-# enable when using windows
-# [shell]
+[shell]
+program = "tmux"
+
+# when using wsl on windows
 # program = "wsl ~"
+# args = ["tmux"]
 
 [window]
 decorations = "none"
@@ -12,6 +15,7 @@ decorations = "none"
 normal.family = "JetBrainsMono Nerd Font"
 size = 10.5
 
+# THEME (Tokyo Night Moon)
 [colors.primary]
 background = '#222436'
 foreground = '#c8d3f5'
