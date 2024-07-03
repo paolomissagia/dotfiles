@@ -12,6 +12,7 @@ return {
 				typescript = { "prettierd" },
 				html = { "prettierd" },
 				css = { "prettierd" },
+				go = { "fmt" },
 			},
 
 			format_on_save = {

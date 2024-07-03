@@ -18,6 +18,7 @@ return {
 				"html",
 				"cssls",
 				"angularls",
+				"gopls",
 			},
 		})
 
