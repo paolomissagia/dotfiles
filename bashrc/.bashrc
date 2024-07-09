@@ -8,7 +8,7 @@
 # aliases
 alias ls="eza -lha --group-directories-first --icons"
 
-#mise
+# mise
 eval "$(~/.local/bin/mise activate bash)"
 
 # nvim
