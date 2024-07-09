@@ -1,8 +1,10 @@
+import = ["~/.config/alacritty/tokyonight-moon.toml"]
+
 [env]
 TERM = "xterm-256color"
 
-# when using wsl
-# program = "wsl ~"
+[shell]
+program = "tmux"
 
 [window]
 decorations = "none"
@@ -10,36 +12,3 @@ decorations = "none"
 [font]
 normal.family = "JetBrainsMono Nerd Font Mono"
 size = 10.5
-
-# THEME (Tokyo Night Moon)
-[colors.primary]
-background = '#222436'
-foreground = '#c8d3f5'
-
-[colors.normal]
-black = '#1b1d2b'
-red = '#ff757f'
-green = '#c3e88d'
-yellow = '#ffc777'
-blue = '#82aaff'
-magenta = '#c099ff'
-cyan = '#86e1fc'
-white = '#828bb8'
-
-[colors.bright]
-black = '#444a73'
-red = '#ff757f'
-green = '#c3e88d'
-yellow = '#ffc777'
-blue = '#82aaff'
-magenta = '#c099ff'
-cyan = '#86e1fc'
-white = '#c8d3f5'
-
-[[colors.indexed_colors]]
-index = 16
-color = '#ff966c'
-
-[[colors.indexed_colors]]
-index = 17
-color = '#c53b53'
