@@ -1,12 +1,8 @@
 [env]
 TERM = "xterm-256color"
 
-[shell]
-program = "tmux"
-
-# when using wsl on windows
+# when using wsl
 # program = "wsl ~"
-# args = ["tmux"]
 
 [window]
 decorations = "none"
