@@ -14,7 +14,6 @@ return {
 				"html",
 				"css",
 				"tsx",
-				"go",
 			},
 			sync_install = false,
 			highlight = { enable = true },
