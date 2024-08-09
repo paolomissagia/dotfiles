@@ -7,7 +7,7 @@ return {
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "isort", "black" },
-				ruby = { "rubocop" },
+				ruby = { "standardrb" },
 				javascript = { "prettierd" },
 				typescript = { "prettierd" },
 				html = { "prettierd" },

@@ -28,7 +28,7 @@ return {
 				"isort",
 				"black",
 				"pylint",
-				"rubocop",
+				"standardrb",
 				"prettierd",
 				"eslint_d",
 			},
