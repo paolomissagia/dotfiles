@@ -1,5 +1,6 @@
 return {
 	"stevearc/conform.nvim",
+    branch = "nvim-0.9",
 	dependencies = {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
