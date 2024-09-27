@@ -10,6 +10,7 @@ return {
 				"isort",
 				"black",
 				"standardrb",
+				"erb-formatter",
 				"prettierd",
 			},
 		})
@@ -19,6 +20,7 @@ return {
 				lua = { "stylua" },
 				python = { "isort", "black" },
 				ruby = { "standardrb" },
+				eruby = { "erb_format" },
 				go = { "gofmt" },
 				javascript = { "prettierd" },
 				typescript = { "prettierd" },
@@ -27,7 +29,7 @@ return {
 			},
 
 			format_on_save = {
-				timeout_ms = 2500,
+				timeout_ms = 1500,
 				lsp_fallback = true,
 			},
 		})
