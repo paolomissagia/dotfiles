@@ -10,3 +10,6 @@ vim.keymap.set("n", "<c-l>", "<c-w>l")
 
 -- search
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
+
+-- file explorer
+vim.keymap.set("n", "<leader>e", ":Explore<CR>")
