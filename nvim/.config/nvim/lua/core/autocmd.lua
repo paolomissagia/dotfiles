@@ -16,9 +16,9 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 
 function ToggleNetRW()
 	if vim.bo.filetype == "netrw" then
-		vim.cmd("bdelete") -- Close the netrw buffer
+		vim.cmd("bdelete")
 	else
-		vim.cmd("Ex") -- Open netrw (Ex is an alias for :Explore)
+		vim.cmd("Ex")
 	end
 end
 
