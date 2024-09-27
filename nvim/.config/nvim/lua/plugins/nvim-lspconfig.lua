@@ -13,9 +13,9 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"pyright",
-				"solargraph",
+				"ruby_lsp",
 				"gopls",
-				"tsserver",
+				"ts_ls",
 				"html",
 				"cssls",
 				"angularls",
@@ -26,6 +26,19 @@ return {
 			function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
+				})
+			end,
+
+			["lua_ls"] = function()
+				lspconfig["lua_ls"].setup({
+					capabilities = capabilities,
+					settings = {
+						Lua = {
+							diagnostics = {
+								globals = { "vim" },
+							},
+						},
+					},
 				})
 			end,
 		})
