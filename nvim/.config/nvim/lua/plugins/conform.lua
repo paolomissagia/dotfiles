@@ -1,13 +1,10 @@
 return {
 	"stevearc/conform.nvim",
-    branch = "nvim-0.9",
 	dependencies = {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
-		local mason_tool_installed = require("mason-tool-installer")
-
-		mason_tool_installed.setup({
+		require("mason-tool-installer").setup({
 			ensure_installed = {
 				"stylua",
 				"isort",
@@ -17,9 +14,7 @@ return {
 			},
 		})
 
-		local conform = require("conform")
-
-		conform.setup({
+		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
 				python = { "isort", "black" },

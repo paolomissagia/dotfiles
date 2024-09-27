@@ -4,9 +4,7 @@ return {
 		"WhoIsSethDaniel/mason-tool-installer.nvim",
 	},
 	config = function()
-		local mason_tool_installed = require("mason-tool-installer")
-
-		mason_tool_installed.setup({
+		require("mason-tool-installer").setup({
 			ensure_installed = {
 				"pylint",
 				"standardrb",
