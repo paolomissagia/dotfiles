@@ -6,8 +6,6 @@ return {
 	config = function()
 		require("mason-tool-installer").setup({
 			ensure_installed = {
-				"pylint",
-				"standardrb",
 				"eslint_d",
 			},
 		})
@@ -15,8 +13,6 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			python = { "pylint" },
-			ruby = { "standardrb" },
 			javascript = { "eslint_d" },
 			typescript = { "eslint_d" },
 		}
@@ -26,9 +22,5 @@ return {
 				lint.try_lint()
 			end,
 		})
-
-		-- Set pylint to work in virtualenv
-		lint.linters.pylint.cmd = "python"
-		lint.linters.pylint.args = { "-m", "pylint", "-f", "json" }
 	end,
 }
