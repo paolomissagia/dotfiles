@@ -23,7 +23,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- disable netrw banner
-vim.g.netrw_banner = 0
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
 
 -- top/bottom lines from cursor
 vim.opt.scrolloff = 8
