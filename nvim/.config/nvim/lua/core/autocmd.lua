@@ -13,13 +13,3 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
-
-function ToggleNetRW()
-	if vim.bo.filetype == "netrw" then
-		vim.cmd("bdelete")
-	else
-		vim.cmd("Ex")
-	end
-end
-
-vim.api.nvim_create_user_command("ToggleNetRW", ToggleNetRW, {})
