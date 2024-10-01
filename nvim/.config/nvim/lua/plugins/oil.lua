@@ -8,6 +8,6 @@ return {
 			else
 				require("oil").open()
 			end
-		end, { desc = "File navigation" }),
+		end, { desc = "File explorer" }),
 	},
 }
