@@ -12,7 +12,6 @@ return {
 		})
 
 		vim.keymap.set("n", "<leader>lg", function()
-			print(vim.bo.filetype)
 			if vim.bo.filetype == "NeogitStatus" then
 				neogit.close()
 			else
