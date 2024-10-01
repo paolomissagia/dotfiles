@@ -13,7 +13,7 @@ return {
 			ensure_installed = {
 				"lua_ls",
 				"pyright",
-				"ruby_lsp",
+				"solargraph",
 				"gopls",
 				"ts_ls",
 				"html",
