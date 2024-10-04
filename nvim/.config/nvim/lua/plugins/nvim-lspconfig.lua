@@ -14,7 +14,6 @@ return {
 				"lua_ls",
 				"pyright",
 				"solargraph",
-				"gopls",
 				"ts_ls",
 				"html",
 				"cssls",
