@@ -2,10 +2,7 @@
 eval "$(starship init zsh)"
 
 # mise
-eval "$(mise activate zsh)"
-
-# neovim
-export PATH="$PATH:/opt/nvim-linux64/bin"
+eval "$(~/.local/bin/mise activate zsh)"
 
 # zsh plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
