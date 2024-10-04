@@ -3,3 +3,6 @@ disabled = true
 
 [python]
 symbol = ' '
+
+[container]
+disabled = true
