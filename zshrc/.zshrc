@@ -2,7 +2,7 @@
 eval "$(starship init zsh)"
 
 # mise
-eval "$(~/.local/bin/mise activate zsh)"
+eval "$(mise activate zsh)"
 
 # zsh plugins
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
