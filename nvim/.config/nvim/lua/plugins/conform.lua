@@ -10,7 +10,6 @@ return {
 				"isort",
 				"black",
 				"standardrb",
-				"erb-formatter",
 				"prettierd",
 			},
 		})
@@ -23,7 +22,9 @@ return {
 				eruby = { "erb_format" },
 				go = { "gofmt" },
 				javascript = { "prettierd" },
+				javascriptreact = { "prettierd" },
 				typescript = { "prettierd" },
+				typescriptreact = { "prettierd" },
 				html = { "prettierd" },
 				css = { "prettierd" },
 			},

@@ -32,7 +32,7 @@ return {
 				lspconfig["lua_ls"].setup({
 					capabilities = capabilities,
 					settings = {
-						Lua = {
+						lua_ls = {
 							diagnostics = {
 								globals = { "vim" },
 							},
