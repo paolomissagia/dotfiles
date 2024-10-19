@@ -7,8 +7,7 @@ return {
 		require("mason-tool-installer").setup({
 			ensure_installed = {
 				"stylua",
-				"isort",
-				"black",
+				"ruff",
 				"standardrb",
 				"prettierd",
 			},
@@ -17,9 +16,8 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "ruff" },
 				ruby = { "standardrb" },
-				eruby = { "erb_format" },
 				go = { "gofmt" },
 				javascript = { "prettierd" },
 				javascriptreact = { "prettierd" },
@@ -30,7 +28,7 @@ return {
 			},
 
 			format_on_save = {
-				timeout_ms = 1500,
+				timeout_ms = 2500,
 				lsp_fallback = true,
 			},
 		})
