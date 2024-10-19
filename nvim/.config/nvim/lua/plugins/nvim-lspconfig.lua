@@ -9,43 +9,44 @@ return {
 		local lspconfig = require("lspconfig")
 		local capabilities = require("cmp_nvim_lsp").default_capabilities()
 
-		mason_lspconfig.setup({
-			ensure_installed = {
-				"lua_ls",
-				"pyright",
-				"ruby_lsp",
-				"gopls",
-				"ts_ls",
-				"html",
-				"cssls",
-				"angularls",
+		local servers = {
+			lua_ls = {
+				Lua = {
+					diagnostics = {
+						globals = { "vim" },
+					},
+				},
 			},
+			pyright = {},
+			ruby_lsp = {},
+			gopls = {},
+			ts_ls = {},
+			html = {},
+			cssls = {},
+			angularls = {},
+		}
+
+		mason_lspconfig.setup({
+			ensure_installed = vim.tbl_keys(servers),
 		})
+
+		local on_attach = function(_, bufnr)
+			local opts = { buffer = bufnr, noremap = true, silent = true }
+
+			vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+			vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
+			vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, opts)
+			vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, opts)
+		end
 
 		mason_lspconfig.setup_handlers({
 			function(server_name)
 				lspconfig[server_name].setup({
 					capabilities = capabilities,
-				})
-			end,
-
-			["lua_ls"] = function()
-				lspconfig["lua_ls"].setup({
-					capabilities = capabilities,
-					settings = {
-						Lua = {
-							diagnostics = {
-								globals = { "vim" },
-							},
-						},
-					},
+					on_attach = on_attach,
+					settings = servers[server_name],
 				})
 			end,
 		})
-
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-		vim.keymap.set("n", "gi", vim.lsp.buf.implementation, {})
-		vim.keymap.set("n", "<space>rn", vim.lsp.buf.rename, {})
-		vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, {})
 	end,
 }
