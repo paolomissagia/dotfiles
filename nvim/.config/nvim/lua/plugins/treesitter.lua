@@ -7,6 +7,7 @@ return {
 				"lua",
 				"python",
 				"ruby",
+				"go",
 				"typescript",
 				"javascript",
 				"html",
