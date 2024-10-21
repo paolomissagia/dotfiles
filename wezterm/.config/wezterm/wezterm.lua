@@ -11,7 +11,7 @@ config.warn_about_missing_glyphs = false
 
 if wezterm.target_triple == "x86_64-pc-windows-msvc" then
 	config.default_domain = "WSL:Fedora-40"
-	config.default_cmd = "~"
+	config.default_cwd = "~"
 end
 
 config.window_padding = {
