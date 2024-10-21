@@ -38,3 +38,6 @@ vim.o.wrap = false
 
 -- turn off mouse/trackpad
 vim.opt.mouse = ""
+
+-- disable tabs
+vim.opt.showtabline = 0

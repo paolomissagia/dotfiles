@@ -1,0 +1,12 @@
+[user]
+	name = Paolo Missagia
+	email = login@paolomissagia.com
+[core]
+	editor = nvim
+[alias]
+	co = checkout
+	br = branch
+	ci = commit
+	st = status
+[pull]
+	rebase = true
