@@ -12,7 +12,7 @@ return {
 
 		-- disable regex for grp
 		vim.keymap.set("n", "<leader>fg", function()
-			builtin.grep_string({ additional_args = { "--fixed-strings" } })
+			builtin.live_grep({ additional_args = { "--fixed-strings" } })
 		end, {})
 
 		vim.keymap.set("n", "<leader>fs", builtin.grep_string, {})
