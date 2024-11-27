@@ -1,3 +1,6 @@
+# neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
+
 # starship
 eval "$(starship init zsh)"
 
@@ -8,7 +11,6 @@ eval "$(mise activate zsh)"
 bindkey -v i
 
 # zsh plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
