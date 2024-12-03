@@ -14,12 +14,6 @@ return {
 						action = ":lua Snacks.dashboard.pick('oldfiles')",
 					},
 					{
-						icon = " ",
-						key = "c",
-						desc = "Config",
-						action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
-					},
-					{
 						icon = " ",
 						key = "l",
 						desc = "Leetcode",
@@ -36,6 +30,12 @@ return {
 						key = "L",
 						desc = "Lazy",
 						action = ":Lazy",
+					},
+					{
+						icon = " ",
+						key = "c",
+						desc = "Config",
+						action = ":lua Snacks.dashboard.pick('files', {cwd = vim.fn.stdpath('config')})",
 					},
 					{ icon = " ", key = "q", desc = "Quit", action = ":qa" },
 				},
