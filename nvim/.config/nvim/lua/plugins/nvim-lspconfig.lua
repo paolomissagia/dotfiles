@@ -12,8 +12,8 @@ return {
 		mason_lspconfig.setup({
 			ensure_installed = {
 				"lua_ls",
-				"pylsp",
-				"ruby_lsp",
+				"pyright",
+				"solargraph",
 				"gopls",
 				"ts_ls",
 				"html",

@@ -7,8 +7,8 @@ return {
 		require("mason-tool-installer").setup({
 			ensure_installed = {
 				"stylua",
-				"ruff",
-				"standardrb",
+				"black",
+				"rubocop",
 				"prettierd",
 			},
 		})
@@ -16,8 +16,8 @@ return {
 		require("conform").setup({
 			formatters_by_ft = {
 				lua = { "stylua" },
-				python = { "ruff" },
-				ruby = { "standardrb" },
+				python = { "black" },
+				ruby = { "rubocop" },
 				go = { "gofmt" },
 				javascript = { "prettierd" },
 				javascriptreact = { "prettierd" },
