@@ -1,6 +1,7 @@
 return {
 	"ibhagwan/fzf-lua",
 	dependencies = { "nvim-tree/nvim-web-devicons" },
+	lazy = false,
 	config = true,
 	keys = {
 		{ "<leader>ff", "<cmd>FzfLua files<cr>" },
