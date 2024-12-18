@@ -6,7 +6,6 @@ return {
 				lua = { "stylua" },
 				python = { "autopep8" },
 				ruby = { "standardrb" },
-				go = { "gofmt" },
 				javascript = { "prettierd" },
 				javascriptreact = { "prettierd" },
 				typescript = { "prettierd" },
