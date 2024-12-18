@@ -1,34 +1,27 @@
 return {
 	"neovim/nvim-lspconfig",
 	dependencies = {
-		"williamboman/mason-lspconfig.nvim",
 		"saghen/blink.cmp",
 	},
 	config = function()
-		local mason_lspconfig = require("mason-lspconfig")
 		local lspconfig = require("lspconfig")
 		local capabilities = require("blink.cmp").get_lsp_capabilities()
 
-		mason_lspconfig.setup({
-			ensure_installed = {
-				"lua_ls",
-				"pylsp",
-				"ruby_lsp",
-				"gopls",
-				"ts_ls",
-				"html",
-				"cssls",
-				"angularls",
-			},
-		})
+		local servers = {
+			"lua_ls",
+			"pylsp",
+			"ruby_lsp",
+			"ts_ls",
+			"html",
+			"cssls",
+			"angularls",
+		}
 
-		mason_lspconfig.setup_handlers({
-			function(server_name)
-				lspconfig[server_name].setup({
-					capabilities = capabilities,
-				})
-			end,
-		})
+		for _, server in ipairs(servers) do
+			lspconfig[server].setup({
+				capabilities = capabilities,
+			})
+		end
 
 		vim.api.nvim_create_autocmd("LspAttach", {
 			group = vim.api.nvim_create_augroup("lsp-on-attach", { clear = true }),

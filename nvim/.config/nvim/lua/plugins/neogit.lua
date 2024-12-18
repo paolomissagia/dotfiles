@@ -1,20 +1,12 @@
 return {
 	"NeogitOrg/neogit",
+	lazy = false,
 	dependencies = {
+		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope.nvim",
-		"sindrets/diffview.nvim",
 	},
-	config = function()
-		local neogit = require("neogit")
-
-		neogit.setup({
-			vim.keymap.set("n", "<leader>lg", function()
-				if vim.bo.filetype == "NeogitStatus" then
-					neogit.close()
-				else
-					neogit.open()
-				end
-			end, { desc = "Neogit" }),
-		})
-	end,
+	config = true,
+	keys = {
+		{ "<leader>lg", "<cmd>Neogit<cr>" },
+	},
 }
