@@ -1,9 +1,13 @@
 return {
 	"stevearc/oil.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
-	lazy = false,
-	opts = {},
-	keys = {
-		{ "<leader>e", "<cmd>Oil<cr>" },
+	dependencies = {
+		"nvim-tree/nvim-web-devicons",
 	},
+	config = function()
+		local oil = require("oil")
+
+		oil.setup({})
+
+		vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>")
+	end,
 }

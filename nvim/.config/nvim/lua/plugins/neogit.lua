@@ -3,9 +3,11 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 	},
-	lazy = false,
-	config = true,
-	keys = {
-		{ "<leader>lg", "<cmd>Neogit<cr>" },
-	},
+	config = function()
+		local neogit = require("neogit")
+
+		neogit.setup({})
+
+		vim.keymap.set("n", "<leader>lg", "<cmd>Neogit<CR>")
+	end,
 }
