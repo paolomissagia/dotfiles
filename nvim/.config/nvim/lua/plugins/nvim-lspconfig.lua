@@ -11,6 +11,7 @@ return {
 			"lua_ls",
 			"pylsp",
 			"ruby_lsp",
+			"jdtls",
 			"ts_ls",
 			"html",
 			"cssls",
