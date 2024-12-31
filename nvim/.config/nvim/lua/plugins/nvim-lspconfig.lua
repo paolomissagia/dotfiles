@@ -15,6 +15,7 @@ return {
 			"html",
 			"cssls",
 			"angularls",
+			"tailwindcss",
 		}
 
 		for _, server in ipairs(servers) do

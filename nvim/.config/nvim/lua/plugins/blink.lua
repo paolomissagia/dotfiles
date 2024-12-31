@@ -1,9 +1,6 @@
 return {
 	"saghen/blink.cmp",
 	version = "v0.*",
-	dependencies = {
-		"rafamadriz/friendly-snippets",
-	},
 	config = function()
 		local blink = require("blink.cmp")
 
@@ -19,19 +16,11 @@ return {
 				default = {
 					"lsp",
 					"path",
-					"snippets",
 					"buffer",
 				},
 			},
 			signature = {
 				enabled = false,
-			},
-			completion = {
-				accept = {
-					auto_brackets = {
-						enabled = true,
-					},
-				},
 			},
 		})
 	end,
