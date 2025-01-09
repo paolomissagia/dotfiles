@@ -15,4 +15,5 @@ source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # aliases
 alias ls="eza -lha --group-directories-first --icons"
+alias vi="nvim"
 alias vim="nvim"
