@@ -1,8 +1,8 @@
 return {
-	"williamboman/mason.nvim",
-	config = function()
-		local mason = require("mason")
+  "williamboman/mason.nvim",
+  config = function()
+    local mason = require("mason")
 
-		mason.setup({})
-	end,
+    mason.setup({})
+  end,
 }
