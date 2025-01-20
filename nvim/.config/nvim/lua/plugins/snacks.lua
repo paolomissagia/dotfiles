@@ -5,31 +5,31 @@ return {
   config = function()
     local snacks = require("snacks")
 
+    -- config
     snacks.setup({
       dashboard = { enabled = true },
-      picker = { enabled = true }
+      picker = { enabled = true },
+      lazygit = { enabled = true },
+
+      styles = {
+        lazygit = {
+          width = 0,
+          height = 0
+        }
+      }
     })
 
-    local ignore = {
-      "/vendor",
-      "/cypress",
-      "/deploy",
-      "/build",
-      "/android",
-      "/ios",
-      "/api-mock"
-    }
+    -- keymaps
+    vim.keymap.set("n", "<leader>lg", function()
+      Snacks.lazygit()
+    end)
 
     vim.keymap.set("n", "<leader>ff", function()
-      Snacks.picker.files({
-        exclude = ignore
-      })
+      Snacks.picker.files()
     end)
 
     vim.keymap.set("n", "<leader>fg", function()
-      Snacks.picker.grep({
-        exclude = ignore
-      })
+      Snacks.picker.grep()
     end)
   end,
 }
