@@ -3,15 +3,21 @@ return {
   priority = 1000,
   lazy = false,
   opts = {
-    dashboard = { enabled = true },
-    picker = { enabled = true },
-    lazygit = { enabled = true },
-
-    styles = {
-      lazygit = {
-        width = 0,
-        height = 0
+    dashboard = {
+      enabled = true
+    },
+    picker = {
+      layout = {
+        fullscreen = true
       },
+    },
+    lazygit = {
+      win = {
+        height = 0,
+        width = 0
+      },
+    },
+    styles = {
       terminal = {
         keys = {
           term_normal = false
