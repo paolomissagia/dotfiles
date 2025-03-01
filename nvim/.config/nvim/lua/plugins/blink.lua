@@ -29,7 +29,6 @@ return {
         "snippets",
         "buffer",
       },
-      cmdline = {},
     }
   },
   opts_extend = { "sources.default" },
