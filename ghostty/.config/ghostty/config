@@ -1,3 +1,8 @@
 theme = tokyonight_moon
-font-size = 11
+font-size = 10
 gtk-titlebar = false
+fullscreen = true
+
+window-padding-y = 0
+window-padding-x = 0
+window-padding-balance = true
