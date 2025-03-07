@@ -22,6 +22,9 @@ return {
         },
       },
     },
+    cmdline = {
+      sources = {}
+    },
     sources = {
       default = {
         "lsp",
