@@ -36,24 +36,40 @@
     {
         "key": "space e",
         "command": "voil.openPanelCurrentDir",
-        "when": "!voilDoc && vim.mode == 'Normal' && editorTextFocus"
+        "when": "!voilDoc && (vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
     },
     {
         "key": "q",
         "command": "voil.close",
         "when": "voilDoc && vim.mode == 'Normal' && editorTextFocus"
     },
+    // lazygit
+    {
+        "key": "space l g",
+        "command": "lazygit-vscode.toggle",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
+    },
+    // harpoon
+    {
+        "key": "space h",
+        "command": "vscode-harpoon.addEditor",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "vscode-harpoon.editorQuickPick",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
+    },
     // telescope
     {
         "key": "space f f",
         "command": "workbench.action.quickOpen",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
-
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
     },
     {
         "key": "space f g",
         "command": "workbench.action.quickTextSearch",
-        "when": "vim.mode == 'Normal' && editorTextFocus"
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor"
     },
     // cycle through options
     {
@@ -69,10 +85,5 @@
         "key": "ctrl+p",
         "command": "workbench.action.quickOpenSelectPrevious",
         "when": "inQuickOpen"
-    },
-    // remove
-    {
-        "key": "ctrl+n",
-        "command": "-workbench.action.files.newUntitledFile"
     },
 ]
