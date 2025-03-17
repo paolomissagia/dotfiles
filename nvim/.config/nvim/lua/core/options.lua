@@ -42,4 +42,4 @@ vim.opt.mouse = ""
 vim.opt.showtabline = 0
 
 -- fixed space for warning/error column
-vim.opt.signcolumn = "yes:1"
+vim.opt.signcolumn = "number"
