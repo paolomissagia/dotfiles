@@ -29,5 +29,6 @@ return {
     { "<leader>lg", function() Snacks.lazygit() end },
     { "<leader>ff", function() Snacks.picker.files() end },
     { "<leader>fg", function() Snacks.picker.grep() end },
+    { "<leader>fs", function() Snacks.picker.grep_word() end },
   }
 }
