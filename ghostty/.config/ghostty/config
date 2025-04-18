@@ -1,5 +1,4 @@
 theme = tokyonight_moon
-font-size = 10
 gtk-titlebar = false
 fullscreen = true
 
