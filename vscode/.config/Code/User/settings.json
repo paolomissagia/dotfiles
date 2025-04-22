@@ -1,0 +1,38 @@
+{
+  // custom
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "none",
+  "breadcrumbs.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
+  "editor.lineNumbers": "relative",
+  "workbench.editor.showTabs": "none",
+  "editor.guides.indentation": false,
+  "editor.colorDecorators": false,
+  "editor.inlayHints.enabled": "off",
+  "workbench.tips.enabled": false,
+  // font
+  "editor.fontFamily": "JetBrains Mono Nerd Font",
+  "editor.fontSize": 15,
+  // scrollbar
+  "editor.scrollbar.horizontal": "hidden",
+  "editor.scrollbar.vertical": "hidden",
+  // limit to 1 file open
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 1,
+  // zenmode 
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "none",
+  "window.customTitleBarVisibility": "windowed",
+  // vim
+  "vim.useSystemClipboard": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.highlightedyank.enable": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+}

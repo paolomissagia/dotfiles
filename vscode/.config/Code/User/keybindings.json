@@ -1,0 +1,114 @@
+[
+    // navigation
+    {
+        "key": "ctrl-h",
+        "command": "workbench.action.navigateLeft",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl-l",
+        "command": "workbench.action.navigateRight",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl-k",
+        "command": "workbench.action.navigateUp",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl-j",
+        "command": "workbench.action.navigateDown",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    // coding
+    {
+        "key": "space c a",
+        "command": "editor.action.codeAction",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "shift-k",
+        "command": "editor.action.showHover",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "space r n",
+        "command": "editor.action.rename",
+        "when": "vim.mode == 'Normal' && editorTextFocus"
+    },
+    // file explorer
+    {
+        "key": "space e",
+        "command": "voil.openPanelCurrentDir",
+        "when": "!voilDoc && (vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    {
+        "key": "q",
+        "command": "voil.close",
+        "when": "voilDoc"
+    },
+    // lazygit
+    {
+        "key": "space l g",
+        "command": "lazygit-vscode.toggle",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    // harpoon
+    {
+        "key": "space h",
+        "command": "vscode-harpoon.addEditor",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    {
+        "key": "ctrl+e",
+        "command": "vscode-harpoon.editorQuickPick",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    // telescope
+    {
+        "key": "space f f",
+        "command": "workbench.action.quickOpen",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    {
+        "key": "space f g",
+        "command": "workbench.action.quickTextSearch",
+        "when": "(vim.mode == 'Normal' || !editorFocus) && !sideBarFocus && !inSettingsEditor && !terminalFocus && !inQuickOpen && !inSearchEditor"
+    },
+    // cycle through options
+    {
+        "key": "ctrl+y",
+        "command": "acceptSelectedSuggestion",
+    },
+    {
+        "key": "ctrl+n",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+y",
+        "command": "acceptSelectedCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "selectPrevCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    {
+        "key": "ctrl+n",
+        "command": "selectNextCodeAction",
+        "when": "codeActionMenuVisible"
+    },
+    // command line pop up
+    {
+        "key": "shift+;",
+        "command": "vim.showQuickpickCmdLine",
+        "when": "editorTextFocus && vim.mode != 'Insert'"
+    }
+]
