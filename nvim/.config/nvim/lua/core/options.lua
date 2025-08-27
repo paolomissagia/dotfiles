@@ -44,3 +44,8 @@ vim.opt.showtabline = 0
 
 -- fixed space for warning/error column
 vim.opt.signcolumn = "number"
+
+-- virtual text
+vim.diagnostic.config({
+	virtual_text = true,
+})
