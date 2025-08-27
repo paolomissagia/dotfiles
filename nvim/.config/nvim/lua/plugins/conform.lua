@@ -3,34 +3,18 @@ return {
 	config = function()
 		require("conform").setup({
 			formatters_by_ft = {
-				lua = {
-					"stylua",
-				},
+				lua = { "stylua" },
 				python = {
 					"ruff_format",
 					"ruff_organize_imports",
 				},
-				ruby = {
-					"standardrb",
-				},
-				javascript = {
-					"prettier",
-				},
-				javascriptreact = {
-					"prettier",
-				},
-				typescript = {
-					"prettier",
-				},
-				typescriptreact = {
-					"prettier",
-				},
-				html = {
-					"prettier",
-				},
-				css = {
-					"prettier",
-				},
+				ruby = { "standardrb" },
+				javascript = { "prettier" },
+				javascriptreact = { "prettier" },
+				typescript = { "prettier" },
+				typescriptreact = { "prettier" },
+				html = { "prettier" },
+				css = { "prettier" },
 			},
 
 			format_on_save = {
