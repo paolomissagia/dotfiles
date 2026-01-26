@@ -1,24 +1,25 @@
 return {
 	"neovim/nvim-lspconfig",
-	dependencies = { "saghen/blink.cmp" },
-	opts = {
-		servers = {
+	config = function()
+		local servers = {
 			lua_ls = {},
-			basedpyright = {},
+			basedpyright = {
+                settings = {
+                    basedpyright = {
+                        typeCheckingMode = "off"
+                    }
+                }
+            },
 			ruby_lsp = {},
 			ts_ls = {},
 			html = {},
 			cssls = {},
-		},
-	},
-	config = function(_, opts)
-		local lspconfig = require("lspconfig")
+		}
 
-		for server, config in pairs(opts.servers) do
-			local capabilities = require("blink.cmp").get_lsp_capabilities(config.capabilities)
-			config.capabilities = capabilities
-
-			lspconfig[server].setup(config)
+		for server, config in pairs(servers) do
+			vim.lsp.config(server, config)
 		end
+
+		vim.lsp.enable(vim.tbl_keys(servers))
 	end,
 }
