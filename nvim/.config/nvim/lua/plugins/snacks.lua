@@ -50,5 +50,29 @@ return {
 				Snacks.picker.grep_word()
 			end,
 		},
+		{
+			"<leader>fb",
+			function()
+				Snacks.picker.buffers()
+			end,
+		},
+		{
+			"<leader>fh",
+			function()
+				Snacks.picker.help()
+			end,
+		},
+		{
+			"<leader>fd",
+			function()
+				Snacks.picker.diagnostics()
+			end,
+		},
+		{
+			"<leader>fo",
+			function()
+				Snacks.picker.lsp_symbols()
+			end,
+		},
 	},
 }
