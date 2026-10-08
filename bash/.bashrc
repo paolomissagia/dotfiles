@@ -10,6 +10,8 @@ fi
 set -o vi
 
 # env
+export EDITOR="nvim"
+export VISUAL="nvim"
 export CLAUDE_CONFIG_DIR="$HOME/.config/claude"
 
 # aliases
