@@ -4,8 +4,5 @@
   },
   "theme": "dark",
   "skipDangerousModePermissionPrompt": true,
-  "attribution": {
-    "commit": "",
-    "pr": ""
-  }
+  "attribution": false
 }
