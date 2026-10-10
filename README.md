@@ -17,3 +17,9 @@ Stow won't overwrite existing files, so move any existing `~/.bashrc` out of the
 ```sh
 stow -D <package>
 ```
+
+## Templates
+
+`templates/` holds shared project setups, copied into projects by hand. It is not a stow package.
+
+- `templates/vite-react/`: how our Vite + React sites handle search engines and link previews (see its README).

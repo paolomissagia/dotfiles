@@ -1,2 +1,5 @@
 claude/.config/claude/*
 !claude/.config/claude/settings.json
+
+# Claude Code worktrees
+.claude/worktrees
